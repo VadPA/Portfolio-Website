@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+<!--  class="show-sidebar" -->
+  <body>
+    <div class="page" id="page">
+      <div class="container">
+        <div class="wrapper">
+          <div class="wrapper__left">
+            <!-- Sidebar -->
+            {{> sidebar }}
+          </div>
+          <div class="wrapper__right">
+            <!-- Header -->
+            {{> header }}
+            {{> mobile-nav }}
+            {{> sidebar-mobile }}
+              <!-- Main -->
+            <main class="main">
+              {{> body }}
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

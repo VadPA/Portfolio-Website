@@ -1,0 +1,47 @@
+@import 'vendor/reset.scss';
+@import 'mixins';
+@import 'vars';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $primary;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: $dark-blue;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+  @include breakpoint($tablet-bp) {
+    &.no-scroll,
+    &.show-sidebar {
+      overflow: hidden;
+    }
+  }
+}
+
+/*----------- Blocks --------------*/
+// @import 'blocks/header';
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/mobile-nav';
+@import 'blocks/wrapper';
+@import 'blocks/sidebar';
+@import 'blocks/sidebar-mobile';
+@import 'blocks/main';
+@import 'blocks/container';
+@import 'blocks/profile';
+@import 'blocks/social';
+@import 'blocks/btn';
+@import 'blocks/nav-icon';
+
+@import 'blocks/post';
+@import 'blocks/pagination';
+@import 'blocks/work';

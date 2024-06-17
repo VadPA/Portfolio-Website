@@ -1,0 +1,12 @@
+.main {
+  padding: 4rem 0 5rem 3rem;
+
+  @include breakpoint($tablet-g-bp) {
+    padding-top: 1rem;
+    padding-left: 0;
+  }
+
+  @include breakpoint($mobile-bp) {
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,32 @@
+.nav{
+  margin-left: 2rem;
+  @include breakpoint($mobile-bp) {
+    display: none;
+  }
+
+  &__list{
+    display: flex;
+  }
+  &__item{
+    position: relative;
+    &:hover{
+      .nav__link{
+        background-color: $blue;
+      }
+    }
+  }
+
+  &__link{
+    display: block;
+    padding: 1.52rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color:$white;
+    transition: background-color .2s linear;
+    
+    @include breakpoint($tablet-g-bp){
+      text-transform: capitalize;
+    }
+  }
+}

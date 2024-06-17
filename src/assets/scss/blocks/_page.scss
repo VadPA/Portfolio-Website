@@ -1,0 +1,14 @@
+.page {
+
+  &__title {
+    margin-bottom: 3rem;
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: $color-text;
+    text-shadow: 3px 5px 4px rgba(11,25,87,0.5);
+
+    @include breakpoint($mobile-bp) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
